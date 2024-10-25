@@ -360,7 +360,14 @@ public class DroidShows extends ListActivity
 				getString(R.string.layout_app_name),
 				getString(R.string.archive),
 				getString(R.string.menu_log),
-			}));
+			}) {
+			@Override
+			public View getView(int position, View convertView, ViewGroup parent) {
+				View view = super.getView(position, convertView, parent);
+				((TextView) view).setTextColor(getColor(android.R.color.primary_text_dark));
+				return view;
+			}
+		});
 		listView.postDelayed(new Runnable() {
 			public void run() {
 				spinner.setOnItemSelectedListener(new OnItemSelectedListener() {

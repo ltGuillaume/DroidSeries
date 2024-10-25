@@ -25,7 +25,7 @@ public class SwipeDetect implements View.OnTouchListener {
 					deltaYabs = deltaY > 0 ? deltaY : -deltaY;
 				
 				if (value >= 0 && onDownX != 0 && deltaXabs > deltaYabs * 2) {
-					if (deltaXabs < vWidth / 4)
+					if (deltaXabs < vWidth / 6)
 						return true;
 					
 					if (deltaX > 0) {	// > 0 = RTL

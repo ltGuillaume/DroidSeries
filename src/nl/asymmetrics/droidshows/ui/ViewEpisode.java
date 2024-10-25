@@ -242,7 +242,7 @@ public class ViewEpisode extends Activity
 		if (swipeDetect.value != 0) return;
 		String uri = this.uri;
 		if (imdbId.startsWith("tt")) {
-			uri += "title/"+ imdbId;
+			uri += "title/"+ imdbId +"/fullcredits/cast";
 		} else {
 			uri += "find?q="+ Uri.encode(serieName.replaceAll(" \\(....\\)", "") +" "+ episodeName);
 		}

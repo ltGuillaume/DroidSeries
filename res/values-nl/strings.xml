@@ -29,7 +29,7 @@
 <string name="menu_close_log">Logboek sluiten</string>
 <string name="menu_context_view_serie_details">Details serie</string>
 <string name="menu_context_view_imdb">Serie op IMDb</string>
-<string name="menu_context_view_ep_imdb">Aflevering op IMDb</string>
+<string name="menu_context_view_ep_imdb">Cast aflevering op IMDb</string>
 <string name="menu_context_search_on">Zoeken op</string>
 <string name="menu_context_ext_resources">Externe bronnen</string>
 <string name="menu_context_mark_next_episode_as_seen">Volgende aflevering gezien</string>

@@ -1153,7 +1153,7 @@ public class DroidShows extends ListActivity
 			if (getApplicationContext().getPackageManager().resolveActivity(testForApp, 0) == null)
 				uri = "https://m.imdb.com/";
 			if (imdbId.startsWith("tt"))
-				uri += "title/"+ imdbId;
+				uri += "title/"+ imdbId + (episode != null ? "/fullcredits/cast" : "");
 			else
 				uri += "find?q="+ Uri.encode((episode != null ? serieName.replaceAll(" \\(....\\)", "") +" " : "") + name);
 			Intent imdb = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
